@@ -11,6 +11,15 @@ It keeps the subtitle table structure intact, rewrites only the Persian column, 
 3. Extract it
 4. Run `SMTV Translation Editor.exe`
 
+## Run From Source
+
+If you prefer to run the app directly from source:
+
+1. Install Node.js
+2. Clone the repository
+3. Run `npm install`
+4. Run `npm start`
+
 ## What It Does
 
 - Opens subtitle `.docx` files that use a 3-column table layout
