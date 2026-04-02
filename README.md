@@ -1,8 +1,8 @@
 # SMTV Translation Editor
 
-Windows desktop app for editing Persian subtitle rows inside 3-column Word `.docx` subtitle tables.
+Windows desktop app for editing Non-English subtitle rows inside 3-column Word `.docx` subtitle tables.
 
-It keeps the subtitle table structure intact, rewrites only the Persian column, and can use either local logic or AI review with `Gemini` or `OpenAI`.
+It keeps the subtitle table structure intact, rewrites only the Non-English column, and can use either local logic or AI review with `Gemini` or `OpenAI`.
 
 ## Download
 
@@ -24,8 +24,8 @@ If you prefer to run the app directly from source:
 
 - Opens subtitle `.docx` files that use a 3-column table layout
 - Preserves row count and table structure
-- Keeps blank Persian rows blank
-- Rewrites only the Persian column
+- Keeps blank Non-English rows blank
+- Rewrites only the Non-English column
 - Generates safer subtitle layouts from full sentence groups
 - Optionally uses AI for phrase protection, layout guidance, and light editing
 - Saves a new `.docx` beside the original
@@ -58,14 +58,14 @@ If you prefer to run the app directly from source:
 
 1. Read the subtitle Word table
 2. Group rows into sentence blocks
-3. Build safe Persian split units
+3. Build safe Non-English split units
 4. Generate multiple valid layout candidates
 5. Score and choose the best local layout
 6. Optionally send batches to AI for:
    - phrase protection
    - layout guidance
    - candidate choice
-   - light Persian smoothing
+   - light Non-English smoothing
 7. Validate the final rows
 8. Save a new `.docx`
 
@@ -76,13 +76,13 @@ This app currently targets subtitle files stored as:
 - a Word `.docx`
 - one main 3-column table
 - English in column 2
-- Persian in column 3
+- Non-English in column 3
 
 ## Notes
 
-- Subtitle/header rows before the first Persian subtitle row are preserved
+- Subtitle/header rows before the first Non-English subtitle row are preserved
 - Source/meta rows are isolated from normal subtitle planning when possible
-- Blank Persian rows are preserved and not auto-filled
+- Blank Non-English rows are preserved and not auto-filled
 - AI output is always validated locally before being applied
 
 ## Current Version
