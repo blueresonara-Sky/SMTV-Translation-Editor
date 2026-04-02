@@ -1,7 +1,7 @@
 {
   "name": "smtv-translation-editor",
   "version": "0.2.0",
-  "description": "Windows desktop tool for editing and rearranging Persian subtitle rows in DOCX tables with optional Gemini review.",
+  "description": "Windows desktop app for editing Persian subtitle rows in DOCX tables with optional Gemini or OpenAI review.",
   "author": "Mani and Codex",
   "main": "src/main.js",
   "scripts": {
