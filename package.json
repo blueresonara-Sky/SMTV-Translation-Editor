@@ -1,0 +1,23 @@
+{
+  "name": "smtv-translation-editor",
+  "version": "0.2.0",
+  "description": "Windows desktop tool for editing and rearranging Persian subtitle rows in DOCX tables with optional Gemini review.",
+  "author": "Mani and Codex",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node tests/run-tests.js",
+    "dist:win": "electron-packager . \"SMTV Translation Editor\" --platform=win32 --arch=x64 --out=dist --overwrite --asar --prune=true --ignore=\"^/(dist|release|tests|\\.git|\\.runtime|sample-input.*|sample-input_.*|launchers/gemini-key\\.local\\.bat|training-data/.+\\.docx)$\"",
+    "release:zip": "powershell -ExecutionPolicy Bypass -File scripts/create-release-zip.ps1"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "@xmldom/xmldom": "latest",
+    "jszip": "latest"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  }
+}

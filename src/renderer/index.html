@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SMTV Translation Editor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">DOCX Subtitle Workflow</p>
+        <h1>SMTV Translation Editor</h1>
+        <p id="app-build" class="app-build">Version: loading...</p>
+        <p id="app-update" class="app-update">Checking for updates...</p>
+        <p class="lede">
+          Drop a Word subtitle table, keep the timing rows intact, and let the
+          tool edit and rewrite the Persian column.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div id="drop-zone" class="drop-zone" tabindex="0">
+          <p class="drop-title">Drop a `.docx` subtitle file here</p>
+          <p class="drop-subtitle">
+            Or use the picker if you prefer a normal file dialog.
+          </p>
+          <button id="pick-file" class="secondary">Choose File</button>
+        </div>
+
+        <div class="selection">
+          <label for="input-path">Input file</label>
+          <input id="input-path" type="text" readonly />
+        </div>
+
+        <div class="settings-grid">
+          <label class="field">
+            <span>Mode</span>
+            <select id="mode">
+              <option value="offline">Offline only</option>
+              <option value="ai">Offline + AI review</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>AI provider</span>
+            <select id="ai-provider">
+              <option value="gemini">Gemini</option>
+              <option value="openai">OpenAI</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Output suffix</span>
+            <input id="suffix" type="text" value="_rearranged_byApp" />
+          </label>
+
+          <label class="field">
+            <span id="ai-model-label">AI model</span>
+            <input id="ai-model" type="text" value="gemini-2.5-flash-lite" />
+          </label>
+
+          <label class="field">
+            <span id="ai-api-key-label">API key</span>
+            <input id="ai-api-key" type="password" placeholder="Paste API key here" />
+          </label>
+
+          <label class="field checkbox">
+            <input id="write-report" type="checkbox" />
+            <span>Write JSON report beside output file</span>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="run-button" class="primary">Run editing</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="status-row">
+          <h2>Run Summary</h2>
+          <span id="status-pill" class="status-pill idle">Idle</span>
+        </div>
+        <pre id="result-output" class="result-output">Waiting for a file.</pre>
+      </section>
+    </main>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

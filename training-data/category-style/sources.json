@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-03-29",
+  "sourceRoot": "D:\\Downloads\\Translation",
+  "categories": {
+    "aw-ls": {
+      "zipFiles": [
+        "D:\\Downloads\\Translation\\AW-20260329T091903Z-1-001.zip",
+        "D:\\Downloads\\Translation\\LS-20260329T091020Z-1-001.zip"
+      ],
+      "docxCount": 315
+    },
+    "nwn": {
+      "zipFiles": [
+        "D:\\Downloads\\Translation\\NWN-20260329T091007Z-1-001.zip"
+      ],
+      "docxCount": 891
+    },
+    "bmd": {
+      "zipFiles": [
+        "D:\\Downloads\\Translation\\BMD-20260329T090620Z-1-001.zip"
+      ],
+      "docxCount": 1416
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "generatedAt": "2026-03-29T09:40:43.921Z",
+  "profileId": "bmd",
+  "datasetRoot": "D:\\OpenAI Codex\\Translation Tools\\training-data\\category-style\\bmd",
+  "datasetItemCount": 1416,
+  "subtitleGroupCount": 177523,
+  "subtitleRowCount": 376570,
+  "constraints": {
+    "overall": {
+      "lineCount": 363330,
+      "preferredCharMin": 23,
+      "preferredCharTarget": 30,
+      "preferredCharMax": 40,
+      "softCharMax": 42,
+      "hardCharMax": 60,
+      "preferredWordTarget": 5,
+      "preferredWordMax": 8,
+      "hardWordMax": 16,
+      "observedCharMax": 383,
+      "observedWordMax": 48
+    },
+    "byRowType": {
+      "normal": {
+        "lineCount": 361438,
+        "preferredCharMin": 23,
+        "preferredCharTarget": 30,
+        "preferredCharMax": 40,
+        "softCharMax": 42,
+        "hardCharMax": 60,
+        "preferredWordTarget": 5,
+        "preferredWordMax": 8,
+        "hardWordMax": 16,
+        "observedCharMax": 269,
+        "observedWordMax": 31
+      },
+      "title": {
+        "lineCount": 254,
+        "preferredCharMin": 14,
+        "preferredCharTarget": 24,
+        "preferredCharMax": 42,
+        "softCharMax": 160,
+        "hardCharMax": 60,
+        "preferredWordTarget": 4,
+        "preferredWordMax": 8,
+        "hardWordMax": 16,
+        "observedCharMax": 383,
+        "observedWordMax": 48
+      },
+      "date": {
+        "lineCount": 1054,
+        "preferredCharMin": 21,
+        "preferredCharTarget": 27,
+        "preferredCharMax": 39,
+        "softCharMax": 42,
+        "hardCharMax": 60,
+        "preferredWordTarget": 4,
+        "preferredWordMax": 8,
+        "hardWordMax": 13,
+        "observedCharMax": 107,
+        "observedWordMax": 13
+      },
+      "source": {
+        "lineCount": 584,
+        "preferredCharMin": 14,
+        "preferredCharTarget": 20,
+        "preferredCharMax": 36,
+        "softCharMax": 40,
+        "hardCharMax": 52,
+        "preferredWordTarget": 3,
+        "preferredWordMax": 6,
+        "hardWordMax": 9,
+        "observedCharMax": 52,
+        "observedWordMax": 9
+      }
+    }
+  },
+  "repeat": {
+    "histogram": {
+      "1": 246293,
+      "2": 57657,
+      "3": 569,
+      "4": 4
+    },
+    "rates": {
+      "1": 0.8087829162329282,
+      "2": 0.18933545249455705,
+      "3": 0.0018684959756734303,
+      "4": 0.000013135296841289491
+    },
+    "allowTripleRepeat": true
+  },
+  "titleDate": {
+    "observedPairs": 6,
+    "mergedPairs": 0,
+    "mergeRate": 0
+  }
+}
